@@ -29,3 +29,10 @@
 ## Запуск проекта
 Для запуска проекта необходимы JDK и JavaFX.
 Откройте проект в IntelliJ IDEA, настройте JavaFX и запустите класс `Main`.
+
+Готовый скомпилированный `jar` файл вы можете скачать в разделе **[Releases](https://github.com/tungusova68-ui/Phonebook/releases/tag/v1.0)**.
+Так как в проекте используется JavaFX, запускать приложение нужно из консоли. 
+Скачайте `jar` файл и выполните команду (замените `путь_к_папке_javafx` на ваш реальный путь к SDK):
+
+```bash
+java --module-path "путь_к_папке_javafx/lib" --add-modules javafx.controls,javafx.fxml -jar phonebook-1.0.jar
